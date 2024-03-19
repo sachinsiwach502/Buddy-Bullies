@@ -30,6 +30,8 @@
     --blue-color: blue;
     --card-color: #031227;
     --timeline-ball: #009DFF;
+    --accord-color: #031227;
+
     --fs-14: 14px;
     --fs-16: 16px;
     --fs-18: 18px;
@@ -472,6 +474,39 @@
     min-height: 511px;
 }
 
+.click-part {
+    background-color: var(--accord-color);
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+.mt-110 {
+    margin-top: 110px;
+}
+
+.mb-121 {
+    margin-bottom: 121px;
+}
+
+.hidden-txt {
+    display: none;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
 
 /* timeline */
 .timeline {
