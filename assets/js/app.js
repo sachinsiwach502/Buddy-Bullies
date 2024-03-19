@@ -30,3 +30,19 @@ accor_item.forEach(element => {
         }
     });
 });
+
+// let check = document.querySelector("#menuIcon");
+// let icons = document.querySelector(".icon");
+// let nav_links = document.querySelectorAll(".nav-link");
+
+// nav_links.forEach(otherelement => {
+//     otherelement.addEventListener("click", () => {
+//         check.addEventListener("change", () => {
+//             if (check.checked) {
+//                 icons.classList.add("show");
+//             } else { icons.classList.remove("show"); }
+
+//         });
+
+//     });
+// });
