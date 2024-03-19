@@ -31,6 +31,45 @@ accor_item.forEach(element => {
     });
 });
 
+
+let to_top = document.querySelector(".scroll-top")
+let pt = 200;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > pt) {
+        to_top.style.display = "block"
+    }
+    else {
+        to_top.style.display = "none";
+    }
+});
+
+to_top.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
+
+
+to_top.addEventListener("mouseover", () => {
+    gsap.from(".scroll-top", {
+        y: 30,
+        repeat: -1,
+        duration: 0.2,
+        yoyo: true
+    })
+})
+to_top.addEventListener("mouseout", () => {
+    gsap.from(".scroll-top", {
+        y: 0,
+        repeat: -1,
+        duration: 1,
+        yoyo: true
+    })
+})
+
+
 // let check = document.querySelector("#menuIcon");
 // let icons = document.querySelector(".icon");
 // let nav_links = document.querySelectorAll(".nav-link");
