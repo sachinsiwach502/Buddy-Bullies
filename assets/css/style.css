@@ -381,16 +381,20 @@
     cursor: pointer;
 }
 
-/* .loader {
+.loder {
     width: 100%;
     height: 100%;
     right: 0;
     top: 0;
-    background-color: #ffff;
+    background-image: url(../img/png/buddy-bullies-img.png);
     z-index: 10;
-    overflow: hidden;
+    overflow-y: hidden;
     height: 100vh;
-} */
+}
+
+.pos {
+    top: -100%;
+}
 
 .py-40 {
     padding-left: 40px;
@@ -691,6 +695,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.w_h_svg {
+    width: 100px;
+    height: 100px;
 }
 
 .containers.left::before {

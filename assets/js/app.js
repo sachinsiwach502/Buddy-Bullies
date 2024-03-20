@@ -92,19 +92,8 @@ chk.addEventListener("click", () => {
 
 
 
-
-// let check = document.querySelector("#menuIcon");
-// let icons = document.querySelector(".icon");
-// let nav_links = document.querySelectorAll(".nav-link");
-
-// nav_links.forEach(otherelement => {
-//     otherelement.addEventListener("click", () => {
-//         check.addEventListener("change", () => {
-//             if (check.checked) {
-//                 icons.classList.add("show");
-//             } else { icons.classList.remove("show"); }
-
-//         });
-
-//     });
-// });
+let loader = document.querySelector(".loder");
+loader.classList.remove("pos");
+setTimeout(() => {
+    loader.classList.add("pos");
+}, 3000);
