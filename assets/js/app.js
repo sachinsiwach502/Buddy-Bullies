@@ -74,7 +74,7 @@ to_top.addEventListener("mouseout", () => {
 
 let chk = document.querySelector(".check");
 let icon = document.querySelector(".icon");
-let link = document.querySelectorAll(".nav-links");
+let link = document.querySelectorAll(".nav-link");
 let body = document.body;
 chk.addEventListener("click", () => {
     icon.classList.toggle("show");
