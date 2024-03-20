@@ -647,8 +647,14 @@
     top: 30px;
     bottom: -20px;
     left: 50%;
-    border: 2px dashed white;
+    width: 2px;
+    background-color: transparent;
+    /* border: 2px dashed var(--white-color); */
     margin-left: -3px;
+    background-image: url(../img/png/line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -672,6 +678,32 @@
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+    background-image: url(../img/svg/timeline-backgroung.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containers.left::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    right: -31px;
+    background-color: rgb(0, 157, 255, 0.1);
+    border-radius: 50px;
+    top: 4px;
+}
+
+.containers.right::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: -32px;
+    background-color: rgb(0, 157, 255, 0.1);
+    border-radius: 50px;
+    top: 4px;
 }
 
 /* Place the container to the left */
