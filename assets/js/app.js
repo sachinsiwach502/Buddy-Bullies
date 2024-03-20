@@ -71,17 +71,25 @@ to_top.addEventListener("mouseout", () => {
 
 
 
+
 let chk = document.querySelector(".check");
 let icon = document.querySelector(".icon");
+let link = document.querySelectorAll(".nav-links");
 let body = document.body;
 chk.addEventListener("click", () => {
     icon.classList.toggle("show");
     if (icon.classList.contains("show")) {
         body.style.overflow = "hidden";
+        link.forEach(other => {
+            other.addEventListener("click", () => {
+                icon.classList.remove("show");
+            });
+        });
     } else {
         body.style.overflow = "auto";
     }
 });
+
 
 
 
