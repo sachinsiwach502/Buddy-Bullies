@@ -381,7 +381,16 @@
     cursor: pointer;
 }
 
-
+/* .loader {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #ffff;
+    z-index: 10;
+    overflow: hidden;
+    height: 100vh;
+} */
 
 .py-40 {
     padding-left: 40px;
@@ -754,7 +763,7 @@
     /* Make sure that all arrows are pointing leftwards */
     .containers::before {
         left: 60px;
-        border: medium solid white;
+        /* border: medium solid white; */
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
@@ -763,6 +772,15 @@
     .left::after,
     .right::after {
         left: 10px;
+    }
+
+    .containers.left::before {
+        left: 0;
+
+    }
+
+    .containers.right::before {
+        left: 0;
     }
 
     /* Make all right containers behave like the left ones */
