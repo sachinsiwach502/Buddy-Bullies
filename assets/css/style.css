@@ -916,4 +916,10 @@
     .center {
         text-align: center;
     }
+
+    .loader-txt {
+        font-size: var(--fs-40);
+        text-wrap: nowrap;
+
+    }
 }
