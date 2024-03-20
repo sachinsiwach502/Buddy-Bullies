@@ -507,6 +507,15 @@
     box-shadow: 0px 0px 50px -3px #ffffff7d;
 }
 
+.min-h-511:hover img {
+    transform: scale(1.2);
+}
+
+.stroke:hover {
+    -webkit-text-stroke: medium;
+    cursor: pointer;
+}
+
 .svg-hover:hover svg path {
     box-shadow: 0px 0px 50px -3px #ffffff7d;
     fill: var(--timeline-ball);
@@ -617,7 +626,7 @@
 
 /* The actual content */
 .content {
-    padding: 20px 30px;
+    padding: 2px 30px;
     position: relative;
     border-radius: 6px;
 }
@@ -693,9 +702,9 @@
         overflow: hidden;
     }
 
-    input[type="checkbox"]:checked~.icon {
+    /* input[type="checkbox"]:checked~.icon {
         left: 0%;
-    }
+    } */
 
     .show {
         left: 0;

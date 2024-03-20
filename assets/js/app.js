@@ -70,6 +70,21 @@ to_top.addEventListener("mouseout", () => {
 })
 
 
+
+let chk = document.querySelector(".check");
+let icon = document.querySelector(".icon");
+let body = document.body;
+chk.addEventListener("click", () => {
+    icon.classList.toggle("show");
+    if (icon.classList.contains("show")) {
+        body.style.overflow = "hidden";
+    } else {
+        body.style.overflow = "auto";
+    }
+});
+
+
+
 // let check = document.querySelector("#menuIcon");
 // let icons = document.querySelector(".icon");
 // let nav_links = document.querySelectorAll(".nav-link");
