@@ -93,7 +93,7 @@ chk.addEventListener("click", () => {
 
 
 let loader = document.querySelector(".loder");
-loader.classList.remove("pos");
+loader.classList.remove("top-100");
 setTimeout(() => {
-    loader.classList.add("pos");
+    loader.classList.add("top-100");
 }, 3000);

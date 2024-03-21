@@ -379,6 +379,9 @@
     border-radius: 50%;
     display: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loder {
@@ -392,7 +395,7 @@
     height: 100vh;
 }
 
-.pos {
+.top-100 {
     top: -100%;
 }
 
@@ -740,11 +743,11 @@
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -21px;
+    left: -23px;
 }
 
 .left::after {
-    right: -21px;
+    right: -20px;
 }
 
 /* The actual content */
@@ -780,7 +783,7 @@
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 10px;
+        left: 8px;
     }
 
     .containers.left::before {
@@ -880,7 +883,7 @@
     }
 
     .fs-md-50 {
-        font-size: 50px;
+        font-size: var(--fs-50);
     }
 
     .lh-md-68 {
@@ -900,7 +903,6 @@
         padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-
     }
 
 }
